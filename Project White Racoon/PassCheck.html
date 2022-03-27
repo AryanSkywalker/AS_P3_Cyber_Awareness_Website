@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+      <meta charset='utf-8'>
+      <title>Passcode Checker</title>
+      <link rel='stylesheet' href='./PassCheck.css'>
+
+      <link rel="icon" href="Icon.png" type="image/png" sizes="16x16">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+      <div class='navBar clearfix'>
+
+        <div id='mainCard'><a href='./Home.html'>Cybersecurity Awareness</a></div>
+        <div class='navs'>
+
+          <ul>
+            <li><a href='./Threats.html'>Threats</a></li>
+            <li><a href='./October.html'>Cybersecurity Month</a></li>
+            <li><a href='./PassCheck.html'>Password Checker</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class='checker'>
+
+        <div class='field clearfix'>
+          <input type='password' id='passcode' name='passcode'>
+          <div class='filler'></div>
+          <input type='submit' id='check' name='check' value='Check'>
+        </div>
+
+        <div class='status clearfix'>
+
+          <p id='length'>Contains: ...</p>
+          <p id='low'>Lower Case Character</p>
+          <p id='high'>Upper Case Character</p>
+          <p id='num'>Number</p>
+          <p id='symbol'>Symbol</p>
+
+        </div>
+
+        <div class='message'><p>Strongness: ...</p></div>
+
+      </div>
+
+      <div class='info left reveal'>
+        <h3>Tips for creating a strong password</h3>
+        <dl>
+
+          <dt>Never use personal information</dt>
+          <dd>Strong passwords shouldn’t include references to personal information such as  names, birthdays, addresses, or phone numbers.</dd>
+
+          <dt>Include a combination of letters, numbers, and symbols</dt>
+          <dd>Secure  passwords include a variety of random characters, numbers, and letters to make the password more complex.</dd>
+
+          <dt>Prioritize password length</dt>
+          <dd>Safe passwords should be at least 16 characters long to lessen the chances of falling victim to a data breach or cyberattack. </dd>
+
+          <dt>Never repeat passwords</dt>
+          <dd>Reusing the same password for different accounts puts you at risk of credential stuffing attacks frequently used by cybercriminals.</dd>
+
+          <dt>Avoid using real words</dt>
+          <dd>Hackers use malicious programs that can process every word found in a dictionary to crack passwords. Stay away from using proper nouns and other standalone dictionary words that could lead to an unsecure password.</dd>
+
+        </dl>
+      </div>
+
+      <div class='info right reveal'>
+        <h3>Common Misconceptions</h3>
+        <p>Replacing letters with digits and symbols. This technique is well known to hackers so swapping an “E” for a “3” or a “5” for a “$” doesn’t make you much more secure.</p>
+        <p>That it’s fine to use the same password a lot as long as it’s strong – what if the website is hacked?</p>
+      </div>
+
+      <div class='info left reveal'>
+        <h3>What does a strong password really looks like?</h3>
+        <p>A strong password is one that’s either not easily guessed or not easily brute forced. To make it not easily guessed it can’t be a simple word, to make it not easily cracked it needs to be long and complex. Super computers can go through billions of attempts per second to guess a password. Try to make your passwords a minimum of 14 characters.</p>
+      </div>
+
+      <div class='info right reveal'>
+        <h3>Try a passphrase</h3>
+        <p>A passphrase is simply a password, that’s longer, it could be a sentence, with spaces and punctuation in it. The benefit of a passphrase is that typically they’re easier to remember, but more difficult to crack due to their length. For every additional character in the length of a password or passphrase, the time it would take to break increases exponentially. Ultimately that means that having a long password or passphrase can make you far more secure than having a short one with some symbols or numbers in it.</p>
+      </div
+
+    </body>
+    <script src='./PassCheck.js'></script>
+</html>

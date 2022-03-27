@@ -1,0 +1,172 @@
+body {
+
+  background-color: #393E41;
+  color: #E7E5DF;
+  margin: 0;
+  padding: 10vh 0 0 0;
+
+}
+
+* {
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  box-sizing: border-box;
+
+}
+
+.navBar {
+
+  background-color: #D3D0CB;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  color: #393E41;
+  width: 100%;
+  z-index: 5;
+
+}
+
+.clearfix::after {
+
+  content: '';
+  clear: both;
+  display: table;
+
+}
+
+#mainCard {
+
+  text-align: center;
+  float: left;
+  font-size: 2rem;
+  width: 40%;
+  height: inherit;
+  overflow: hidden;
+
+}
+
+.navs {
+
+  float: left;
+  width: 60%;
+  height: inherit;
+
+}
+
+.navs ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: inherit;
+
+}
+
+.navs li {
+
+  float: left;
+  width: 33.33%;
+  height: inherit;
+
+}
+
+.navs li a {
+
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color:inherit;
+  height: inherit;
+  text-align: center;
+  border-left: 0.2vw solid #E7BB41;
+  font-size: 1.25rem;
+
+}
+
+.navs li a:hover:not(.active) {
+
+  background-color: #44BBA4;
+  color: #E7E5DF;
+
+}
+
+#mainCard a {
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  width: 100%;
+  text-decoration: none;
+  -webkit-background-clip: border-box;
+  color: inherit;
+  background: none;
+  transition: background 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96),
+              -webkit-background-clip 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96),
+              color 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+}
+
+#mainCard a:hover {
+
+  background: -webkit-linear-gradient(135deg, #119DA4, #7D82B8);
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.info {
+
+  text-align: justify;
+  width: 35rem;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.info p, dl {
+
+  font-size:1.5rem;
+
+}
+
+.info h3 {
+
+  font-size: 1.75rem;
+
+}
+
+.left {
+
+  float: left;
+  clear: both;
+  margin-left:5rem;
+
+}
+
+.right {
+
+  float: right;
+  clear:both;
+  margin-right:5rem;
+
+}
+
+.reveal {
+
+  position: relative;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+}
+
+.reveal.activate {
+
+  opacity: 1;
+  transform: translateY(0);
+
+}
